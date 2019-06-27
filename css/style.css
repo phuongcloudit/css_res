@@ -1,0 +1,131 @@
+body{
+	margin: 0;
+	/* font-family: "Hiragino Kaku Gothic Std W3"; */
+	/* font-size: 16px; */
+	letter-spacing: -0.01em;
+	line-height: 1.65em;
+	min-width: 1025px;
+}
+
+#wrapper{
+	max-width: 1400px;
+	margin: auto;
+}
+
+.header_left{
+    float: left;
+}
+.header_right{
+    float:right;
+}
+.header{
+    margin: 15px auto;
+}
+#site_description{
+	font-size: 12px;
+    /* margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    line-height: 1.45em; */
+}
+.clear{
+    clear: both;
+}
+.clearfix{
+    overflow: auto;
+}
+.container{
+	width: 1025px;
+	margin: 0 auto;
+}
+.selection{
+    background: url('/images/background-3.jpg') no-repeat;
+    width: 100%;
+    height: 705px;
+}
+.selection_item{
+    width: 196px;
+    height: 498px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+.proposal{
+    background: url("/images/background.jpg") no-repeat;
+    width: 100%;
+    height: 542px;;
+}
+.ps_content ul li{
+    background: url("/images/images-5.svg") no-repeat left;
+    list-style: none;
+    padding-left: 40px;
+}
+.evalue{
+    background: url('/images/background-4.jpg') no-repeat;
+}
+.title{
+    text-align: center;
+}
+.selection .container{
+    margin: 50px auto;
+}
+.container > .selection_wrap{
+    text-align: center;
+}
+.cover_img{
+    height: 550px;
+}
+.proposal .container{
+    padding-top: 58px;
+}
+.ps_content{
+    margin-left: 280px;
+}
+.contact_banner{
+    background-color: #002250;
+    height: 394px;;
+}
+.contact_banner .title{
+    /* height: -webkit-fill-available; */
+    height: 94px;
+}
+.rc_content{
+    display: inline-block;
+}
+.rc_text{
+    text-align: center;
+}
+.recommend{
+    background: url('/images/background-5.jpg') no-repeat;
+    height: 517px;
+}
+.facility_wrap{
+    background: url("/images/bg.jpg") no-repeat;
+    height: 1139px;
+}
+.facility{
+    width: 193px;
+    height: 476px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+.facility_title{
+    text-align: center;
+}
+.facility .container{
+    margin: 50px auto;
+}
+.selection_content,.facility_content,.recommend_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.rc_content{
+    height: 300px;
+    width: 242px;
+    background-color: white;
+    margin-right: 10px;
+}
+.recommend .container{
+    margin: 50px auto;
+}
