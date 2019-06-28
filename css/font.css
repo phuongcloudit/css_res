@@ -1,9 +1,12 @@
 @font-face {
-    font-family: BaiJamjuree-Medium;
-    src: url(/fonts/BaiJamjuree-Medium.ttf);
-  }
-  @font-face {
-    font-family: BaiJamjuree-Medium;
-    src: url(/fonts/BaiJamjuree-Medium.ttf);
-  }
-  
+    font-family: "Hiragino Kaku Gothic Std W3";
+    src: url("/fonts/HiraginoKakuGothicStd/HiraginoKakuGothicStdW3.otf");
+}
+@font-face {
+    font-family: "Hiragino Kaku Gothic Std W6";
+    src: url("../fonts/HiraginoKakuGothicStd/HiraginoKakuGothicStdW6.otf");
+}
+@font-face {
+    font-family: "BaiJamjuree-Medium";
+    src: url("../fonts/BaiJamjuree-Medium.ttf");
+}

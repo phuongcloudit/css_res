@@ -1,33 +1,45 @@
 body{
 	margin: 0;
-	/* font-family: "Hiragino Kaku Gothic Std W3"; */
-	/* font-size: 16px; */
+	font-family: "Hiragino Kaku Gothic Std W3";
+	font-size: 16px;
 	letter-spacing: -0.01em;
 	line-height: 1.65em;
 	min-width: 1025px;
 }
+p{
+    margin: 0;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
 
 #wrapper{
 	max-width: 1400px;
-	margin: auto;
+    margin: auto;
+        /* padding-top: 13px; */
 }
 
 .header_left{
     float: left;
 }
+.header_left h1{
+    font-size: 12px;
+    font-family: "Hiragino Kaku Gothic Std W3";
+    margin: 0;
+}
 .header_right{
     float:right;
+    display: flex;
+    width: 490px;;
+	justify-content: space-between;
+    align-items: center;
 }
 .header{
-    margin: 15px auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
-#site_description{
-	font-size: 12px;
-    /* margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: normal;
-    line-height: 1.45em; */
-}
+
 .clear{
     clear: both;
 }
@@ -41,10 +53,13 @@ body{
 .selection{
     background: url('/images/background-3.jpg') no-repeat;
     width: 100%;
-    height: 705px;
+    /* height: 705px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #c5c9b2;
 }
 .selection_item{
-    width: 196px;
+    width: 193px;
     height: 498px;
     background-color: white;
     border-radius: 10px;
@@ -55,71 +70,130 @@ body{
     width: 100%;
     height: 542px;;
 }
+.ps_content ul{
+    /* list-style-image: url("/images/images-5.svg"); */
+    list-style: none;
+    /* margin: 0;
+    padding: 0; */
+}
+.ps_content ul li p{
+    margin: 0;
+    border-bottom: 1px solid #012350;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 15px;
+}
 .ps_content ul li{
     background: url("/images/images-5.svg") no-repeat left;
-    list-style: none;
-    padding-left: 40px;
+    /* list-style: none; */
+    padding-left: 17px;
+    position: relative;
+    margin-bottom: 8px;
+    line-height: 37px;
+    color: #002251;
+    font-size: 22px;
+    font-family: "Hiragino Kaku Gothic Std W6";
+    font-weight: bold;
+    padding-bottom: 12px;
 }
-.evalue{
-    background: url('/images/background-4.jpg') no-repeat;
+/* .ps_content ul li::before{
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    width: 29px;
+    height: 29px;
+    background: url(/images/images-5.svg) left bottom no-repeat;
+} */
+.ps_content ul li span{
+font-size: 28px;
+    color: #F68400;
 }
+
 .title{
     text-align: center;
 }
-.selection .container{
-    margin: 50px auto;
+.title img{
+    margin: 0 auto;
+}
+.selection .title{
+    margin-bottom: 40px;
 }
 .container > .selection_wrap{
+    /* text-align: center; */
+}
+.rs_title, .facility_title{
     text-align: center;
+    font-size: 18px;
+    color: #002251;
+    font-weight: bold;
+    font-family: "Hiragino Kaku Gothic Std W6";
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-.cover_img{
+.sl_content p{
+    text-align: justify;
+    padding-bottom: 10px;
+    line-height: 1.4em;
+}
+.sl_content{
+    padding: 0 10px;
+}
+
+/* .cover_img{
     height: 550px;
-}
+} */
 .proposal .container{
     padding-top: 58px;
+
 }
 .ps_content{
     margin-left: 280px;
+    margin-top: 36px;
 }
 .contact_banner{
     background-color: #002250;
-    height: 394px;;
+    position: relative;
+    padding-bottom: 37px;
 }
-.contact_banner .title{
-    /* height: -webkit-fill-available; */
-    height: 94px;
-}
+
 .rc_content{
     display: inline-block;
 }
-.rc_text{
-    text-align: center;
-}
+
 .recommend{
     background: url('/images/background-5.jpg') no-repeat;
-    height: 517px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.recommend .title{
+    margin-bottom: 45px;
 }
 .facility_wrap{
     background: url("/images/bg.jpg") no-repeat;
-    height: 1139px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-.facility{
+.facility_item{
     width: 193px;
-    height: 476px;
+    /* height: 476px; */
     background-color: white;
     border-radius: 10px;
     display: inline-block;
+    margin-bottom: 20px;
 }
-.facility_title{
+/* .facility_title{
     text-align: center;
-}
-.facility .container{
+} */
+.facility_item .container{
     margin: 50px auto;
 }
-.selection_content,.facility_content,.recommend_content{
+.selection_content,.recommend_content,.facitity_block1,.facitity_block2{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .rc_content{
     height: 300px;
     width: 242px;
@@ -127,5 +201,127 @@ body{
     margin-right: 10px;
 }
 .recommend .container{
-    margin: 50px auto;
+    /* margin: 50px auto; */
 }
+.contact_banner .title{
+    padding-top: 20px;
+    padding-bottom: 47px;
+    font-size: 34px;
+    color: #006820;
+    background: url('/images/reservation--title-bg.svg') no-repeat;
+    font-weight: bold;
+}
+
+.contact_link{
+    position: relative;
+    z-index: 9;
+    margin-top: -10px;
+}
+.slogan_logo,.contact_link{
+    width: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.rc_content .highlight{
+    font-size: 32px;
+    color: #F68400;
+    font-family: "Hiragino Kaku Gothic Std W6";
+}
+.rc_text{
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.rc_content p{
+    font-family: "Hiragino Kaku Gothic Std W6";
+    font-size: 18px;
+}
+.facility_content p{
+    text-align: justify;
+    padding-bottom: 40px;
+    line-height: 1.4em;
+    font-size: 14px;
+}
+.facility_content{
+    padding: 0 10px;
+}
+.facility_wrap .container .title{
+    margin-bottom: 40px;
+}
+.facility_content .facility_title{
+    margin: 0;
+    height: 70px;
+    line-height: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.evalue{
+    background: url('/images/background-4.jpg') no-repeat;
+    padding-top: 50px;
+    padding-bottom: 100px
+}
+.eva_content{
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+}
+.eva_left{
+    width: 563px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.eva_inner{
+    background-color: #233a70;
+    color: #FFF;
+    padding: 30px 20px;
+    position: relative;
+}
+.eva_inner span{
+    position: absolute;
+    background-color: #fff001;
+    color: #000;
+    font-size: 14px;
+    font-family: "Hiragino Kaku Gothic Std W6";
+    top: -11px;
+    line-height: 22px;
+    padding: 0 15px;
+    border-radius: 3px;
+}
+.eva_left > p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    letter-spacing: -0.01cm;
+}
+
+.eva_right{
+    width: 461px;
+    position: relative;
+}
+
+.bg_girl{
+    position: absolute;
+    top: 23px;
+    right: 60px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
