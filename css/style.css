@@ -180,15 +180,15 @@ font-size: 28px;
     background-color: white;
     border-radius: 10px;
     display: inline-block;
+}
+.facility_block1 .facility_item{
     margin-bottom: 20px;
 }
-/* .facility_title{
-    text-align: center;
-} */
+
 .facility_item .container{
     margin: 50px auto;
 }
-.selection_content,.recommend_content,.facitity_block1,.facitity_block2{
+.selection_content,.recommend_content,.facility_block1,.facility_block2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -205,7 +205,7 @@ font-size: 28px;
 }
 .contact_banner .title{
     padding-top: 20px;
-    padding-bottom: 47px;
+    padding-bottom: 48px;
     font-size: 34px;
     color: #006820;
     background: url('/images/reservation--title-bg.svg') no-repeat;
@@ -240,9 +240,15 @@ font-size: 28px;
     font-family: "Hiragino Kaku Gothic Std W6";
     font-size: 18px;
 }
-.facility_content p{
+.facility_block1 .facility_item .facility_content p{
     text-align: justify;
     padding-bottom: 40px;
+    line-height: 1.4em;
+    font-size: 14px;
+}
+.facility_block2 .facility_item .facility_content p{
+    text-align: justify;
+    padding-bottom: 10px;
     line-height: 1.4em;
     font-size: 14px;
 }
@@ -261,9 +267,12 @@ font-size: 28px;
     justify-content: center;
 }
 .evalue{
-    background: url('/images/background-4.jpg') no-repeat;
+    background: url('/images/recommend-use-bg.jpg');
     padding-top: 50px;
     padding-bottom: 100px
+}
+.evalue .container .title{
+    margin-bottom: 40px;
 }
 .eva_content{
     background-color: #FFF;
@@ -274,6 +283,8 @@ font-size: 28px;
     width: 563px;
     padding: 30px;
     box-sizing: border-box;
+    letter-spacing: -0.01cm;
+
 }
 .eva_inner{
     background-color: #233a70;
@@ -295,7 +306,6 @@ font-size: 28px;
 .eva_left > p{
     margin-top: 20px;
     margin-bottom: 40px;
-    letter-spacing: -0.01cm;
 }
 
 .eva_right{
@@ -308,7 +318,225 @@ font-size: 28px;
     top: 23px;
     right: 60px;
 }
+.follow{
+    height: 429px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.fl_contents{
+    display: flex;
+    justify-content: space-between;
+}
 
+.fl_contents .fl img{
+    position: absolute;
+}
+.fl_content{
+    position: absolute;
+}
+
+.follow{
+    background: url("/images/background-6.jpg") no-repeat;
+}
+.fl{
+    position: relative;
+    width: 228px;
+}
+.fl .icon{
+    /* position: absolute; */
+}
+.compare{
+    background-color: #ecf6ee;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+.compare .container .title{
+    margin-bottom: 40px;
+}
+
+.price{
+    background: url(/images/background-2.jpg) no-repeat;
+    padding-top: 60px;
+    padding-bottom: 38px;
+}
+.price .title{
+    margin-bottom: 40px;
+}
+.price_table{
+    border: 1px solid #c9cace;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    margin-left: 17px;
+    margin-right: 17px;
+    
+}
+.price .price_table table, .price .price_table table th, .price .price_table table td{
+    border: 2px solid #eeeeee;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Hiragino Kaku Gothic Std W6";
+    border-collapse: collapse;
+    line-height: 80px;
+}
+
+#back-to-top{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+}
+#back-to-top div{
+    background-color: #213a70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+}
+/* .price_table table .price_table table th, .price_table table td{
+    text-align: center;
+    font-size: 22px;
+    font-family: "Hiragino Kaku Gothic Std W6";
+    border: 2px solid #eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px
+} */
+.price_table table th{
+    background-color: #016821;
+    color: #FFF;
+}
+.price_table table td{
+    color: #002350;
+}
+.price_note{
+    background-color: #016821;
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    font-family: "Hiragino Kaku Gothic Std W6";
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.price_note span{   
+    color: #FFF000;
+    font-size: 36px;
+}
+.price_note p{
+    line-height: 1.5em;    
+}
+.fl_step{
+    background: url("/images/background-3.jpg") no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.fl_step .container .title{
+    margin-bottom: 40px;
+}
+.fl2_item{
+    width: 228px;
+    position: relative;
+}
+.fl2_item:not(:last-child)::after{
+    background: url("/images/images-39.svg") center no-repeat;
+    height: 30px;
+    width: 30px;
+    content: "";
+    position: absolute;
+    top: 103px;
+    right: -30px;
+}
+.fl2_item .icon span{
+    font-family: "BaiJamjuree-Medium";
+    font-size: 32px;
+    color: #006820;
+}
+.fl2_item .icon{
+    text-align: center;
+}
+.fl2_item .icon img{
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.fl2_content{
+    display: flex;
+    justify-content: space-between
+}
+.faq{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.faq .container .title{
+    margin-bottom: 50px;
+}
+.question{
+    background-color: #ecf6ee;
+    font-size: 26px;
+    padding-left: 150px;
+    line-height: 68px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.question::before{
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-color: #002250;
+    position: absolute;
+    left: -35px;
+    top: -40px;
+    transform: rotate(25deg);
+}
+.question::after{
+    content: "Q";
+    font-family: "Hiragino Kaku Gothic Std W6";
+    font-size: 42px;
+    color: #FFF;
+    position: absolute;
+    line-height: 68px;
+    left: 40px;
+}
+.answer{
+    padding-left: 120px;
+    margin-top: 25px;
+    position: relative;
+}
+.answer::before{
+    content: "A";
+    font-family: "Hiragino Kaku Gothic Std W6";
+    font-size: 42px;
+    color: #002250;
+    position: absolute;
+    line-height: 50px;
+    left: 40px;
+}
+.faq_list {
+    padding-bottom: 50px;
+}
+.faq_list .faq_item{
+    margin-top: 30px;
+}
+.faq_list h3{
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+.footer{
+    background-color: #ecf6ee;
+    text-align: center;
+    font-weight: bold;
+    color: #002251;
+    font-size: 14px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.footer .info_add{
+    line-height: 2.3;
+}
+.footer .copyright{
+    margin-top: 25px;
+}
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
