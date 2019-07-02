@@ -3,7 +3,7 @@ $(document).ready(function($){
 	var offset = 500;
   	var duration = 500;
   	var offsetCT = 1500;
-  	var to_top = $('#back-to-top, #fixed-contact');
+  	var to_top = $('#back-to-top, #fixed_contact');
 	$(window).scroll(function() {
 	    $(this).scrollTop() > offset?to_top.fadeIn(duration):to_top.fadeOut(duration);
 	});
